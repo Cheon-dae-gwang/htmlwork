@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{border:1px solid red}
+        li{border:1px solid black}
+        ul{list-style: none;}
+        ul{padding:0}
+        body{border:1px solid green}
+        body{margin:0;}
+        ul{margin-top:0}
+        ul{margin-bottom:0}
+        li{display:inline;}  /* display:, inline, block, inline-block, flex */
+        li{padding: 50px 12px;} /* padding의 top 부분은 계산이 되지 않음 */
+        li{display: inline-block;} /* 문제점은 li사이의 enter 간격이 존재 */
+        li{display: flex;} /* flex 속성은 직접적인 속성이 아닌 상위에 적용하는 속성 */
+        ul{display: flex;} /* li간격이 발생할 경우 li에 직접적인 처리는 되지 않으며 상위 태그인 ul에 적용해야 함 */
+        li{padding: 8px 12px}
+        li:hover{background-color: black; color:white} /* 배경은 백그라운드컬러, 일반 글자는 컬러 */
+    </style>
+</head>
+<body>
+    <!-- ul>li>{MENU$} : vscode 편집기에서 여러개의 태그 생성방법 -->
+    <nav>
+        <ul>
+            <li>MENU 1</li>
+            <li>MENU 2</li>
+            <li>MENU 3</li>
+            <li>MENU 4</li>
+        </ul>
+    </nav>
+</body>
+</html>
